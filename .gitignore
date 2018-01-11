@@ -1,32 +1,42 @@
-# Prerequisites
-*.d
+#include <bits/stdc++.h>
+#define ll  long long 
+#define pub push_back
+#define pob pop_back
+#define mp  make_pair
+#define F   first
+#define S   second
+#define clr clear()
+#define ret return
+#define MM(a , l) memset(a , l , sizeof a)
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std ;
 
-# Precompiled Headers
-*.gch
-*.pch
+string s ;
+ll n , t = 0 ;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+bool p(ll x , ll c)
+{
+    if(x + c > n)
+        ret 0 ;
+        
+    for(ll i = x ; i <= (x + (c / 2) + 1) ; i++)
+        if(s[i] != s[x+c-i])
+            ret 0 ;
+            
+    for(ll i = x ; i <= c ; i++)
+        cout << s[i] << " " ;
+    ret 1 ;
+}
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main(int argc, char **argv)
+{ios::sync_with_stdio(0) ;
+    
+    
+    cin >> n ;
+    
+    
+    
+    
+    ret 0 ;
+}
+      
